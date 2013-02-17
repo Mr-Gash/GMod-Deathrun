@@ -1,0 +1,142 @@
+"Gamemode"
+{
+	"base"		"base"
+	"title"		"Deathrun"
+	"maps"	"^deathrun_|^dr_"
+	"author"	"Mr. Gash"
+	"menusystem"	"1"
+
+	"settings"
+	{
+		1
+		{
+			"name"		"dr_roundtime_seconds"
+			"text"		"Round Time (in seconds)"
+			"help"		"The length of the round in seconds."
+			"type"		"Numeric"
+			"default"	"360"
+		}
+
+		2
+		{
+
+			"name"		"dr_total_rounds"
+			"text"		"Total Rounds"
+			"help"		"The amount of rounds to play before changing the map."
+			"type"		"Numeric"
+			"default"	"10"
+
+		}
+
+		3
+		{
+
+			"name"		"dr_death_rate"
+			"text"		"Percent of Death Players"
+			"help"		"Percentage of total players that will become a death. The player amount is multiplied by this number, then rounded down."
+			"type"		"Numeric"
+			"default"	"0.25"
+
+		}
+
+		4
+		{
+
+			"name"		"dr_death_max"
+			"text"		"Maximum Amount of Deaths"
+			"help"		"The maximum amount players allowed to be in the Death team."
+			"type"		"Numeric"
+			"default"	"6"
+
+		}
+
+		
+		5
+		{
+			"name"		"dr_highlight_admins"
+			"text"		"Highlight Admins"
+			"help"		"When enabled, the scoreboard will show admins with a gold name and a shield icon."
+			"type"		"CheckBox"
+			"default"	"1"
+		}
+
+		6
+		{
+
+			"name"		"dr_allow_death_suicide"
+			"text"		"Suicide Allowed for Deaths"
+			"help"		"If disabled, players on the Death team will not be allowed to kill themselves."
+			"type"		"CheckBox"
+			"default"	"0"
+
+		}
+
+		7
+		{
+
+			"name"		"dr_allow_autojump"
+			"text"		"Allow Autojump"
+			"help"		"If set to 0, players will not autojump by holding down their spacebar (regardless if they have it enabled/disabled). I don't recommend disabling this."
+			"type"		"CheckBox"
+			"default"	"1"
+
+		}
+
+		8
+		{
+
+			"name"		"dr_unlimited_ammo"
+			"text"		"Unlimited Ammo"
+			"help"		"If set to 1, primary ammo will not be taken when players shoot weapons. This won't work with default HL2 weapons."
+			"type"		"CheckBox"
+			"default"	"1"
+
+		}
+
+		9
+		{
+
+			"name"		"dr_allow_death_pickup"
+			"text"		"Deaths Can Use All Weapons"
+			"help"		"If set to 0, players on the Death team will be unable to pick up any weapons aside from the crowbar."
+			"type"		"CheckBox"
+			"default"	"0"
+
+		}
+
+		10
+		{
+
+			"name"		"dr_realistic_fall_damage"
+			"text"		"Realistic Fall Damage"
+			"help"		"If set to 1, players will be damaged based on the speed at which they fall. If set to 0, the fall damage will be 10, regardless of speed or height."
+			"type"		"CheckBox"
+			"default"	"1"
+
+		}
+
+		11
+		{
+
+			"name"		"dr_notify_rounds_left"
+			"text"		"Notify Rounds Left on Prep Phase"
+			"help"		"Notify everyone on the server how many rounds are left as the prep phase begins."
+			"type"		"CheckBox"
+			"default"	"1"
+
+		}
+
+		12
+		{
+
+			"name"		"dr_push_collide"
+			"text"		"Push on Collide"
+			"help"		"If set to 1, when one player enters another, they will be pushed apart."
+			"type"		"CheckBox"
+			"default"	"0"
+
+		}
+
+	}
+
+}
