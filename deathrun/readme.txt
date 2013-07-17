@@ -11,7 +11,7 @@ gamemode "deathrun"
 
 This !does not! have any weapons by default. If you want to have weapons, download a weapon pack and name them that of the CS:S weapons. For example, if you have a weapon_real_cs_ak47, rename it to weapon_ak47 to be used. The gamemode does NOT spawn the weapons automatically, the map does!
 If you don't want to do this, you can of course have the gamemode spawn the weapons, but this means you will have to place them all manually. To do this, join the map you want to place weapons on. 
-Look to where you want it to spawn, and type in your console "dr_spawn_weapon weapon_name" - you MUST be a superadmin to do this. To save the weapon, look at it and type "dr_save_weapon" in your console.
+Look to where you want it to spawn, and type in your console "dr_add_weapon weapon_name" - you MUST be a superadmin to do this. To save the weapon, look at it and type "dr_save_weapon" in your console.
 
 Don't forget to download some maps you can play! There are a lot you can find just by doing a Google search. Deathrun maps start with either "deathrun_" or "dr_"
 
