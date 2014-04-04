@@ -57,6 +57,8 @@ function GM:PlayerSpawn( ply )
 	ply:SetRunSpeed(300)
 	ply:AllowFlashlight(true)
 	ply:SetArmor(0)
+	
+	ply:SetupHands()
 
 	ply:SetJumpPower(190)
 
@@ -83,6 +85,18 @@ function GM:PlayerSpawn( ply )
 	local mdl = hook.Call( "ChangePlayerModel", GAMEMODE, ply ) or false
 	
 	ply:SetModel( mdl or table.Random( rModels ) )
+
+end
+
+function GM:PlayerSetHandsModel( ply, ent )
+
+	local simplemodel = player_manager.TranslateToPlayerModelName( ply:GetModel() )
+	local info = player_manager.TranslatePlayerHands( simplemodel )
+	if ( info ) then
+		ent:SetModel( info.model )
+		ent:SetSkin( info.skin )
+		ent:SetBodyGroups( info.body )
+	end
 
 end
 
