@@ -6,6 +6,8 @@ ROUND_ENDING = 3
 SetGlobalInt( "Deathrun_RoundPhase", ROUND_WAITING )
 SetGlobalInt( "Deathrun_RoundTime", 0 )
 
+local minplayers = CreateConVar( "dr_min_players", 2, FCVAR_ARCHIVE )
+
 function GM:SetRoundTime( time )
 	return SetGlobalInt( "Deathrun_RoundTime", CurTime() + (tonumber(time or 5) or 5) )
 end
@@ -164,7 +166,7 @@ GM.ThinkRoundFunctions = {
 
 	[ROUND_WAITING] = function( gm )
 
-		if #player.GetAll() < 2 then return end
+		if #player.GetAll() < minplayers:GetInt() then return end
 
 		gm:SetRound( ROUND_PREPARING )
 
