@@ -20,10 +20,10 @@ end
 local meta = FindMetaTable( "Player" )
 
 function GM:PhysgunPickup( ply, ent )
-	if not ply:IsSuperAdmin() then return false end
-	if not IsValid(ent) then return false end
-	if not ent:IsWeapon() then return false end
-	return true
+	if ply:IsSuperAdmin() then return true end
+	if IsValid(ent) then return true end
+	if ent:IsWeapon() then return true end
+	return false
 end
 
 function GM:PlayerNoClip( ply, on )
